@@ -1,0 +1,4 @@
+1) Compiled in QT4.5 on Windows 10
+2) Requires adb be available (three files: adb.exe, AdbWinApi.dll, AdbWinUsbApi.dll) when program 
+is executed.
+3) adb interface driver for the phone you want to control must be installed.
