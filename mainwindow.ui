@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>668</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AdbRemoteDroid - Mark's Tool</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="screenLa">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>381</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="runCmdPB">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>620</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>RunCmd</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="shellPTE">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>500</y>
+      <width>381</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="cmdLE">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>620</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>input keyevent 26/82 (powerkey/unlock)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cmdLa">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>620</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="text">
+     <string>ADB Shell Cmd:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="scrResyLE">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>590</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string>9999; </string>
+    </property>
+    <property name="text">
+     <string>1920</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="scrResxLE">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>590</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string>9999; </string>
+    </property>
+    <property name="text">
+     <string>1080</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scrResLa">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>590</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Screen Res</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scrResyLa">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>590</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>y:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scrResxLa">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>590</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>x:</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="scrUpdateQSli">
+    <property name="geometry">
+     <rect>
+      <x>345</x>
+      <y>590</y>
+      <width>21</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="singleStep">
+     <number>99</number>
+    </property>
+    <property name="pageStep">
+     <number>99</number>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scrUpLa">
+    <property name="geometry">
+     <rect>
+      <x>209</x>
+      <y>590</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Screen Update</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scrUpOnLa">
+    <property name="geometry">
+     <rect>
+      <x>329</x>
+      <y>590</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ON</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scrUpOffLa">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>590</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OFF</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="scrUpdateLE">
+    <property name="geometry">
+     <rect>
+      <x>283</x>
+      <y>590</y>
+      <width>31</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string>9999; </string>
+    </property>
+    <property name="text">
+     <string>5000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="scrUpdateLa">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>590</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ms</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
